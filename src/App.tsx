@@ -18,6 +18,7 @@ import RecoverPass from "./functionalities/RecoverPass";
 import CartFail from "./functionalities/CartFail";
 import CartPending from "./functionalities/CartPending";
 import CartSuccess from "./functionalities/CartSuccess";
+import CreditsPage from "./functionalities/CreditsPage";
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
 
         {/* Rutas con Layout */}
         <Route element={<Layout />}>
+
+
+
+          <Route path="/credits" element={<CreditsPage title="UN Bet|Credits"/>} />
+
           <Route path="/home" element={<Home title="ReWear | Inicio" />} />
           <Route
             path="/user/:username"
