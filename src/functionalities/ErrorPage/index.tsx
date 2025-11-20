@@ -11,18 +11,10 @@ function index({ title }: Props) {
   return (
     <div className={`container-fluid ${styles.errorBackground}`}>
       <div className="row">
-        <div className="col-12 text-center">
-          <div
-            className="mt-5"
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.8)",
-              padding: "1rem",
-              borderRadius: "30px",
-              filter: "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))",
-            }}
-          >
+        <div className="col-12 text-center d-flex flex-column justify-content-center align-items-center">
+          <div className="mt-5 pt-5" style={{ color: "white" }}>
             <h1>404</h1>
-            <h2>¡Ups!, Esta pagina no existe</h2>
+            <h2>¡Ups!, Esta página no existe</h2>
             <h3>Si crees que es un error, contacta con el administrador</h3>
           </div>
         </div>

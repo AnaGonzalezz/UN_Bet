@@ -26,23 +26,27 @@ function App() {
     <Router>
       <Routes>
         {/* Ruta pública sin layout */}
-        <Route path="/" element={<LandingPage title="UN Bet" />} />
-        <Route path="/login" element={<Login title="ReWear | Login" />} />
+
+        <Route path="/login" element={<Login title="UN Bet | Login" />} />
         <Route
           path="/actualizarcontrasena"
-          element={<RecoverPass title="ReWear | Recover" />}
+          element={<RecoverPass title="UN Bet | Recover" />}
         />
 
         {/* Rutas con Layout */}
+
         <Route element={<Layout />}>
+          <Route
+            path="/credits"
+            element={<CreditsPage title="UN Bet | Credits" />}
+          />
+          <Route path="/" element={<LandingPage title="UN Bet" />} />
+          <Route
+            path="/credit-requests"
+            element={<CreditRequestsPage title="UN Bet | Solicitudes" />}
+          />
 
-
-
-          <Route path="/credits" element={<CreditsPage title="UN Bet|Credits"/>} />
-          <Route path="/credit-requests" element={<CreditRequestsPage title="UN Bet | Solicitudes" />}
-/>
-
-          <Route path="/home" element={<Home title="ReWear | Inicio" />} />
+          <Route path="/home" element={<Home title="UN Bet | Inicio" />} />
           <Route
             path="/user/:username"
             element={<User title="ReWear | User" />}
@@ -50,7 +54,7 @@ function App() {
 
           <Route
             path="/userconfig"
-            element={<UserConfig title="ReWear | Configuración" />}
+            element={<UserConfig title="UN Bet | Configuración" />}
           />
 
           <Route element={<PrivateRoute />}>
@@ -103,10 +107,7 @@ function App() {
             element={<History title="ReWear | Configuración" />}
           />
 
-          <Route
-            path="*"
-            element={<ErrorPage title="ReWear | Configuración" />}
-          />
+          <Route path="*" element={<ErrorPage title="UN Bet | 404" />} />
         </Route>
       </Routes>
     </Router>

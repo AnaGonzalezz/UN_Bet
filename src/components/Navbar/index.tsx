@@ -12,7 +12,11 @@ function index({}: Props) {
       <div className="container-fluid">
         <div>
           <a className="navbar-brand ms-5" href="#">
-            <img src="UNBetLogo.svg" alt="Bootstrap" width={100} />
+            <img
+              src="logos/logoCompletoRectangular.png"
+              alt="Logo"
+              width={60}
+            />
           </a>
         </div>
 
@@ -29,13 +33,13 @@ function index({}: Props) {
             Cómo Funciona?
           </a>
 
-          <div className="me-2" style={{ width: "10rem" }}>
+          <div className="me-3" style={{ width: "8rem" }}>
             <a href="/login">
               <ButtonAction text="Ingresar" />
             </a>
           </div>
 
-          <div style={{ width: "10rem" }}>
+          <div style={{ width: "8rem" }}>
             <a href="/login">
               <Button text="Registrarse" />
             </a>

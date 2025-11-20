@@ -13,7 +13,6 @@ function LandingPage({ title }: Props) {
   return (
     <>
       <LandingPageFirst />
-      <LandingPageSecond />
     </>
   );
 }

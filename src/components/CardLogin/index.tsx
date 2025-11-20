@@ -4,8 +4,6 @@ import LoginForm from "../LoginForm";
 import styles from "./style.module.css";
 import RegisterForm from "../RegisterForm";
 import RecoverPassForm from "../RecoverPassForm";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-import ButtonGoogle from "../ButtonGoogle";
 
 type Props = {};
 
@@ -32,9 +30,9 @@ function CardLogin({}: Props) {
   return (
     <div className="d-flex col-sm-8 col-md-8 col-lg-12 col-xl-10">
       <div className={`card shadow ${styles.cardLogin}`}>
-        <div className="container-fluid px-5 py-3">
+        <div className="container-fluid d-flex">
           <img
-            src="/UNBetLogo.svg"
+            src="/logos/logoCompletoRectangular.png"
             className="card-img-top"
             alt="Logo UN Bet"
           />
@@ -51,7 +49,7 @@ function CardLogin({}: Props) {
               <div className="mt-5 mb-3">
                 <a
                   style={{
-                    color: "black",
+                    color: "white",
                     textDecoration: "underline",
                     cursor: "pointer",
                   }}
@@ -64,12 +62,12 @@ function CardLogin({}: Props) {
           </div>
         )}
         {currentView === "register" && (
-          <div className="mx-5 mb-3">
+          <div className="mx-3 mb-3">
             <RegisterForm onReturn={handleBackToInitial} />
           </div>
         )}
         {currentView === "login" && (
-          <div className="mx-5 mb-3">
+          <div className="mx-3 mb-3">
             <LoginForm
               onReturn={handleBackToInitial}
               onRecoverPassword={handleShowRecoverForm}
@@ -77,7 +75,7 @@ function CardLogin({}: Props) {
           </div>
         )}
         {currentView === "recover" && (
-          <div className="mx-5 mb-3">
+          <div className="mx-3 mb-3">
             <RecoverPassForm onReturn={handleBackToInitial} />
           </div>
         )}

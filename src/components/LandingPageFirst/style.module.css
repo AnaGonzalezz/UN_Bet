@@ -6,5 +6,9 @@
     rgba(23, 0, 48, 1) 100%
   );
   background-size: cover;
+  background-position: center;
   height: 100vh;
+}
+::-webkit-scrollbar {
+  display: none;
 }
