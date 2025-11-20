@@ -20,6 +20,7 @@ import CartPending from "./functionalities/CartPending";
 import CartSuccess from "./functionalities/CartSuccess";
 import CreditsPage from "./functionalities/CreditsPage";
 import CreditRequestsPage from "./functionalities/CreditRequestsPage";
+import UserProfile from "./functionalities/UserProfile";
 
 function App() {
   return (
@@ -35,12 +36,9 @@ function App() {
 
         {/* Rutas con Layout */}
         <Route element={<Layout />}>
-
-
-
           <Route path="/credits" element={<CreditsPage title="UN Bet|Credits"/>} />
-          <Route path="/credit-requests" element={<CreditRequestsPage title="UN Bet | Solicitudes" />}
-/>
+          <Route path="/credit-requests" element={<CreditRequestsPage title="UN Bet | Solicitudes" />}/>
+          <Route path="/user/:username" element={<UserProfile title="UNBet | Perfil" />}/>
 
           <Route path="/home" element={<Home title="ReWear | Inicio" />} />
           <Route
