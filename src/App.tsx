@@ -27,11 +27,11 @@ function App() {
     <Router>
       <Routes>
         {/* Ruta pública sin layout */}
-        <Route path="/" element={<LandingPage title="UN Bet" />} />
-        <Route path="/login" element={<Login title="ReWear | Login" />} />
+
+        <Route path="/login" element={<Login title="UN Bet | Login" />} />
         <Route
           path="/actualizarcontrasena"
-          element={<RecoverPass title="ReWear | Recover" />}
+          element={<RecoverPass title="UN Bet | Recover" />}
         />
 
         {/* Rutas con Layout */}
@@ -48,7 +48,7 @@ function App() {
 
           <Route
             path="/userconfig"
-            element={<UserConfig title="ReWear | Configuración" />}
+            element={<UserConfig title="UN Bet | Configuración" />}
           />
 
           <Route element={<PrivateRoute />}>
@@ -101,10 +101,7 @@ function App() {
             element={<History title="ReWear | Configuración" />}
           />
 
-          <Route
-            path="*"
-            element={<ErrorPage title="ReWear | Configuración" />}
-          />
+          <Route path="*" element={<ErrorPage title="UN Bet | 404" />} />
         </Route>
       </Routes>
     </Router>
