@@ -7,7 +7,7 @@ const LogBackground = () => {
       <div className="row" style={{ height: "100vh" }}>
         <div className={"col col-lg-6 p-0 d-none d-lg-block"}>
           <div className="d-flex justify-content-center align-items-center h-100">
-            <img src="\ruleta.png" alt="Imagen Ruleta" />
+            <img src="\ruleta.png" alt="Imagen Ruleta" width={"60%"} />
           </div>
         </div>
 

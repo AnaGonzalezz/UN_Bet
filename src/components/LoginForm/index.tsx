@@ -89,7 +89,7 @@ function LoginForm({ onReturn, onRecoverPassword }: Props) {
           onClick={onRecoverPassword}
           style={{
             cursor: "pointer",
-            color: "black",
+            color: "white",
             textDecoration: "underline",
             fontSize: "0.85rem",
           }}
@@ -102,12 +102,12 @@ function LoginForm({ onReturn, onRecoverPassword }: Props) {
         <ButtonAction text="Entrar" type="submit" />
       </div>
 
-      <div className="mt-5">
+      <div className="mt-2">
         <div
           onClick={onReturn}
           style={{
             cursor: "pointer",
-            color: "black",
+            color: "white",
             textDecoration: "underline",
             fontSize: "0.85rem",
           }}

@@ -61,150 +61,160 @@ function RegisterForm({ onReturn }: Props) {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="my-2">
-          <label htmlFor="firstNameSlot" className="form-label"></label>
-          <input
-            required
-            name="first_name"
-            type="text"
-            className={`form-control ${styles.loginSlot}`}
-            id="firstNameSlotRegister"
-            placeholder="Nombre(s)"
-          />
-        </div>
+        <div
+          className="container"
+          style={{
+            overflowY: "auto",
+            maxHeight: "45vh",
+            scrollbarColor: "rgba(255, 210, 28, 1) transparent",
+            scrollbarWidth: "thin",
+          }}
+        >
+          <div className="my-2">
+            <label htmlFor="firstNameSlot" className="form-label"></label>
+            <input
+              required
+              name="first_name"
+              type="text"
+              className={`form-control ${styles.loginSlot}`}
+              id="firstNameSlotRegister"
+              placeholder="Nombre(s)"
+            />
+          </div>
 
-        <div className="my-2">
-          <label htmlFor="lastNameSlot" className="form-label"></label>
-          <input
-            required
-            name="last_names"
-            type="text"
-            className={`form-control ${styles.loginSlot}`}
-            id="lastNameSlotRegister"
-            placeholder="Apellido(s)"
-          />
-        </div>
+          <div className="my-2">
+            <label htmlFor="lastNameSlot" className="form-label"></label>
+            <input
+              required
+              name="last_names"
+              type="text"
+              className={`form-control ${styles.loginSlot}`}
+              id="lastNameSlotRegister"
+              placeholder="Apellido(s)"
+            />
+          </div>
 
-        <div className="my-2">
-          <label htmlFor="userSlot" className="form-label"></label>
-          <input
-            required
-            name="username"
-            type="text"
-            className={`form-control ${styles.loginSlot}`}
-            id="userSlotRegister"
-            placeholder="Nombre de usuario"
-          />
-        </div>
+          <div className="my-2">
+            <label htmlFor="userSlot" className="form-label"></label>
+            <input
+              required
+              name="username"
+              type="text"
+              className={`form-control ${styles.loginSlot}`}
+              id="userSlotRegister"
+              placeholder="Nombre de usuario"
+            />
+          </div>
 
-        <div className="my-2">
-          <label htmlFor="passwordSlot" className="form-label"></label>
-          <input
-            required
-            name="password"
-            type="password"
-            className={`form-control ${styles.loginSlot}`}
-            id="passwordSlotRegister"
-            placeholder="Contraseña"
-          />
-        </div>
+          <div className="my-2">
+            <label htmlFor="passwordSlot" className="form-label"></label>
+            <input
+              required
+              name="password"
+              type="password"
+              className={`form-control ${styles.loginSlot}`}
+              id="passwordSlotRegister"
+              placeholder="Contraseña"
+            />
+          </div>
 
-        <div className="my-2">
-          <label htmlFor="passwordSlotRepeat" className="form-label"></label>
-          <input
-            required
-            name="passwordRepeat"
-            type="password"
-            className={`form-control ${styles.loginSlot}`}
-            id="passwordSlotRepeat"
-            placeholder="Repite Contraseña"
-          />
-        </div>
+          <div className="my-2">
+            <label htmlFor="passwordSlotRepeat" className="form-label"></label>
+            <input
+              required
+              name="passwordRepeat"
+              type="password"
+              className={`form-control ${styles.loginSlot}`}
+              id="passwordSlotRepeat"
+              placeholder="Repite Contraseña"
+            />
+          </div>
 
-        <div className="my-2">
-          <label htmlFor="emailSlot" className="form-label"></label>
-          <input
-            required
-            name="email"
-            type="email"
-            className={`form-control ${styles.loginSlot}`}
-            id="emailSlotRegister"
-            placeholder="Correo Electrónico"
-          />
-        </div>
+          <div className="my-2">
+            <label htmlFor="emailSlot" className="form-label"></label>
+            <input
+              required
+              name="email"
+              type="email"
+              className={`form-control ${styles.loginSlot}`}
+              id="emailSlotRegister"
+              placeholder="Correo Electrónico"
+            />
+          </div>
 
-        <div className="my-2">
-          <label htmlFor="phoneSlot" className="form-label"></label>
-          <input
-            required
-            name="phone"
-            type="phone"
-            className={`form-control ${styles.loginSlot}`}
-            id="phoneSlotRegister"
-            placeholder="Numero de telefono"
-          />
-        </div>
+          <div className="my-2">
+            <label htmlFor="phoneSlot" className="form-label"></label>
+            <input
+              required
+              name="phone"
+              type="number"
+              className={`form-control ${styles.loginSlot}`}
+              id="phoneSlotRegister"
+              placeholder="Numero de telefono"
+            />
+          </div>
 
-        <div className="my-2">
-          <label htmlFor="birthDate" className="form-label"></label>
-          <input
-            required
-            name="phone"
-            type="date"
-            className={`form-control ${styles.loginSlot}`}
-            id="phoneSlotRegister"
-          />
-        </div>
+          <div className="my-2">
+            <label htmlFor="birthDate" className="form-label"></label>
+            <input
+              required
+              name="phone"
+              type="date"
+              className={`form-control ${styles.loginSlot}`}
+              id="phoneSlotRegister"
+            />
+          </div>
 
-        <div className="my-2">
-          <label htmlFor="birthDate" className="form-label"></label>
-          <input
-            required
-            name="phone"
-            type="number"
-            className={`form-control ${styles.loginSlot}`}
-            id="phoneSlotRegister"
-            placeholder="Cédula de ciudadanía"
-          />
-        </div>
+          <div className="my-2">
+            <label htmlFor="birthDate" className="form-label"></label>
+            <input
+              required
+              name="phone"
+              type="number"
+              className={`form-control ${styles.loginSlot}`}
+              id="phoneSlotRegister"
+              placeholder="Cédula de ciudadanía"
+            />
+          </div>
 
-        <div className="mt-3 form-check">
-          <input
-            required
-            type="checkbox"
-            className="form-check-input"
-            id="exampleCheck1"
-          />
-          <label className="form-check-label" htmlFor="exampleCheck1">
-            <div style={{ fontSize: "0.8rem" }}>
-              He leído y acepto los{" "}
-              <a
-                href=""
-                style={{ color: "black" }}
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                términos y condiciones
-              </a>
+          <div className="mt-4 form-check">
+            <input
+              required
+              type="checkbox"
+              className="form-check-input"
+              id="exampleCheck1"
+            />
+            <label className="form-check-label" htmlFor="exampleCheck1">
+              <div style={{ fontSize: "0.8rem", color: "white" }}>
+                He leído y acepto los{" "}
+                <a
+                  href=""
+                  style={{ color: "white" }}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  términos y condiciones
+                </a>
+              </div>
+            </label>
+          </div>
+
+          <div className="mt-3 mx-5">
+            <ButtonAction text="Registrarme" type="submit" />
+          </div>
+
+          <div className="mt-3">
+            <div
+              onClick={onReturn}
+              style={{
+                cursor: "pointer",
+                color: "white",
+                textDecoration: "underline",
+                fontSize: "0.85rem",
+              }}
+            >
+              Volver
             </div>
-          </label>
-        </div>
-
-        <div className="mt-5 mx-5">
-          <ButtonAction text="Registrarme" type="submit" />
-        </div>
-
-        <div className="mt-5">
-          <div
-            onClick={onReturn}
-            style={{
-              cursor: "pointer",
-              color: "black",
-              textDecoration: "underline",
-              fontSize: "0.85rem",
-            }}
-          >
-            Volver
           </div>
         </div>
       </form>

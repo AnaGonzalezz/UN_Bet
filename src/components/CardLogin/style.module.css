@@ -1,10 +1,6 @@
 .cardLogin {
-  background-color: rgba(110, 110, 110, 0.397) !important;
+  background-color: rgba(0, 0, 0, 0.377) !important;
   border-radius: 30px !important;
   text-align: center !important;
-  width: 70vh !important;
-}
-
-.GoogleLogin {
-  border-radius: 30px !important;
+  width: 60vh !important;
 }

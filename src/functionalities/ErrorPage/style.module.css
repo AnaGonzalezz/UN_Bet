@@ -1,7 +1,10 @@
 .errorBackground {
-  height: 100vh;
-  background-image: url("/error.jpg");
-  background-repeat: no-repeat;
+  background: #000000;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(23, 0, 48, 1) 100%
+  );
   background-size: cover;
-  background-position: center;
+  height: 100vh;
 }

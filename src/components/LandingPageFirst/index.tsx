@@ -5,37 +5,53 @@ import ButtonAction from "../ButtonAction";
 type Props = {};
 
 function LandingPage({}: Props) {
-  const handleHome = () => {
-    window.location.href = "/home";
+  const handleLogin = () => {
+    window.location.href = "/login";
   };
   return (
     <>
       <div className={`container-fluid ${styles.LandingBackground}`}>
-        <div className="col-xs-12 col-lg-5">
-          <div className="pt-5">
-            <h1 style={{ fontSize: "4rem", fontWeight: "800 !important" }}>
-              <span>Juega </span>
-              <span>y </span>
-              <span>Gana! </span>
-              <span>en</span>
-              <br />
-              <span>UN Bet</span>
-            </h1>
+        <div className=" container-fluid row p-0 m-0">
+          <div className="col-6 ">
+            <div className="ms-5 mt-5 pt-5">
+              <div className="pt-5">
+                <h1
+                  style={{
+                    fontSize: "3rem",
+                    fontWeight: "800",
+                    color: "white",
+                  }}
+                >
+                  <span style={{ color: "rgba(255, 210, 28, 1)" }}>Juega </span>
+                  <span>y </span>
+                  <span style={{ color: "rgba(8, 156, 0, 1)" }}>Gana! </span>
+                  <span>en</span>
+                  <br />
+                  <span>UN Bet</span>
+                </h1>
+              </div>
+              <div className="mt-3 d-none d-sm-block">
+                <h2 style={{ fontSize: "1rem", color: "white" }}>
+                  Te regalamos 500 Coins con tu registro**{" "}
+                </h2>
+              </div>
+
+              <div className="d-flex mt-5">
+                <div className="p-3" style={{ width: "10rem" }}>
+                  <ButtonAction text="Registrarse" onClick={handleLogin} />
+                </div>
+                <div className="p-3" style={{ width: "10rem" }}>
+                  <Button text="Ingresar" onClick={handleLogin} />
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="mt-5 pt-2 d-none d-sm-block">
-            <h2 style={{ fontSize: "1.5rem" }}>
-              Te regalamos 500 Coins con tu registro**{" "}
-            </h2>
-          </div>
-
-          <div className="d-flex justify-content-center">
-            <div className="p-3" style={{ width: "10rem" }}>
-              <ButtonAction text="Registrarse" onClick={handleHome} />
-            </div>
-            <div className="p-3" style={{ width: "10rem" }}>
-              <Button text="Ingresar" onClick={handleHome} />
-            </div>
+          <div
+            className="col-6 justify-content-center d-flex align-items-center"
+            style={{ height: "86vh" }}
+          >
+            <img src="ruleta.png" alt="" width={"60%"} />
           </div>
         </div>
       </div>
